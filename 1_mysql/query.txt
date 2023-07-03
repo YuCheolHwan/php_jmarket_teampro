@@ -1,0 +1,33 @@
+part_time
+insert into part_time values (null, 'juseong1','청량리동', '브라질리언 왁싱 모델 구인(남성 환영)', 1,'왕십리', '평일', 5, '건장한 남성분 모십니다 ^^');
+
+estate
+insert into estate values(null, 'juseong1','왕십리동','싸다 싸 순백 인테리어 즉시 입주 가능 아파트','집주인', '아파트','9000/120', 34, 3, 2, 15, '가능','즉시 입주', '가능', '가능','있음', '거의 신축급 즉시 입주 가능한 매물이에요 ^^');
+
+car
+insert into  car values(null, 'juseong1','왕십리동','람보르기니 아벤타도르 svj',69000,2019,7400, 72000,1200,'황소','20년 3월',6498,'가솔린','자동 7단',0,0,0,'람보르기니 말해 뭐해');
+
+member
+insert into membership values(null,'admin1','admin1','홍길동','admin1@naver.com','010-1234-1234',null,null,null,0,0,now());
+
+wish
+create table wish(
+    num int unsigned not null auto_increment,
+    wished_id varchar(100) not null,
+    wished_num int not null,
+    board_name varchar(100) not null,
+    primary key (num)
+);
+
+notice
+create table notice(
+	num int NOT NULL AUTO_INCREMENT,
+	writer_id char(15) NOT NULL,
+title char(20) NOT NULL,
+	content varchar(200) NOT NULL,
+  hit int(11) NOT NULL DEFAULT '0',
+  file_name char(40) NOT NULL,
+  file_type char(40) NOT NULL,
+  file_copied char(40) NOT NULL,
+  PRIMARY KEY (num)
+);
